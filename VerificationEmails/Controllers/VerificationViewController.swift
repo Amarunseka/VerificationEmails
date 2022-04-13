@@ -67,10 +67,6 @@ class VerificationViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         mailTextField.becomeFirstResponder()
-        
-        heightAnchorCollectionView.constant = 50
-        statusLabelTopAnchor.constant = view.frame.height / 4
-        view.layoutIfNeeded()
     }
 
     override func viewDidDisappear(_ animated: Bool) {
@@ -84,15 +80,8 @@ class VerificationViewController: UIViewController {
             object: nil)
     }
     
-    override func viewWillTransition(to size: CGSize,
-                                     with coordinator: UIViewControllerTransitionCoordinator) {
-        if UIDevice.current.orientation.isLandscape {
-            statusLabelTopAnchor.constant = 50
-            view.layoutIfNeeded()
-        } else {
-            statusLabelTopAnchor.constant = view.frame.height / 2
-            view.layoutIfNeeded()
-        }
+    override func viewDidLayoutSubviews() {
+        statusLabelTopAnchor.constant = view.frame.height / 4
     }
     
     // MARK: - private methods-actions
@@ -167,7 +156,7 @@ extension VerificationViewController: UICollectionViewDataSource {
             heightAnchorCollectionView.constant = 50
             view.layoutIfNeeded()
         }
-        return verificationModel.filteredEmailsArray.count // это массив отфильтрованных имейлов после ввода текста в текстфилд
+        return verificationModel.filteredEmailsArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -225,7 +214,8 @@ extension VerificationViewController: ActionsMailTextFieldProtocol {
 extension VerificationViewController {
     
     private func setupConstraints(){
-        heightAnchorCollectionView = collectionView.heightAnchor.constraint(equalToConstant: 300)
+
+        heightAnchorCollectionView = collectionView.heightAnchor.constraint(equalToConstant: 50)
         statusLabelTopAnchor = statusLabel.topAnchor.constraint(equalTo: containerView.topAnchor, constant: view.frame.height / 4)
         heightAnchorCollectionView.isActive = true
         statusLabelTopAnchor.isActive = true

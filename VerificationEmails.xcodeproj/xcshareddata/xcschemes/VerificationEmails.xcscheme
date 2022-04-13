@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4536988327F725F400E811FF"
-               BuildableName = "VerificationEmailsWithScroll.app"
+               BuildableName = "VerificationEmails.app"
                BlueprintName = "VerificationEmails"
                ReferencedContainer = "container:VerificationEmails.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4536989927F725F900E811FF"
-               BuildableName = "VerificationEmailsWithScrollTests.xctest"
+               BuildableName = "VerificationEmailsTests.xctest"
                BlueprintName = "VerificationEmailsTests"
                ReferencedContainer = "container:VerificationEmails.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "453698A327F725F900E811FF"
-               BuildableName = "VerificationEmailsWithScrollUITests.xctest"
+               BuildableName = "VerificationEmailsUITests.xctest"
                BlueprintName = "VerificationEmailsUITests"
                ReferencedContainer = "container:VerificationEmails.xcodeproj">
             </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4536988327F725F400E811FF"
-            BuildableName = "VerificationEmailsWithScroll.app"
+            BuildableName = "VerificationEmails.app"
             BlueprintName = "VerificationEmails"
             ReferencedContainer = "container:VerificationEmails.xcodeproj">
          </BuildableReference>
@@ -82,7 +82,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4536988327F725F400E811FF"
-            BuildableName = "VerificationEmailsWithScroll.app"
+            BuildableName = "VerificationEmails.app"
             BlueprintName = "VerificationEmails"
             ReferencedContainer = "container:VerificationEmails.xcodeproj">
          </BuildableReference>
