@@ -63,6 +63,12 @@ class VerificationViewController: UIViewController {
             name: UIResponder.keyboardWillHideNotification,
             object: nil)
     }
+    
+    
+    override func viewDidLayoutSubviews() {
+        statusLabelTopAnchor.constant = view.frame.height / 4
+        collectionView.reloadData()
+    }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -79,10 +85,7 @@ class VerificationViewController: UIViewController {
             self, name: UIResponder.keyboardWillHideNotification,
             object: nil)
     }
-    
-    override func viewDidLayoutSubviews() {
-        statusLabelTopAnchor.constant = view.frame.height / 4
-    }
+
     
     // MARK: - private methods-actions
     private func setupView(){
